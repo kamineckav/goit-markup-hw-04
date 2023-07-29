@@ -119,11 +119,6 @@ img {
   gap: 40px;
 }
 
-.header-nav-item {
-  position: relative;
-  color: #404bbf;
-}
-
 .header-nav-link {
   color: var(--dark);
   font-size: 16px;
@@ -132,6 +127,7 @@ img {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
+  position: relative;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -142,7 +138,7 @@ img {
   color: var(--pressed-state);
 }
 
-.header-nav-item::after .header-nav-link {
+.header-nav::after .header-nav-item {
   content: "";
   position: absolute;
   left: 0;
@@ -350,6 +346,7 @@ img {
 
 .our-team-list-position {
   display: flex;
+  justify-content: center;
   gap: 24px;
   margin: 0 16px;
 }
@@ -669,7 +666,6 @@ img {
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  /* border-style: none; */
   border-color: #e7e9fc;
   background-color: #e7e9fc;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
