@@ -181,10 +181,11 @@ img {
 }
 
 .hero-section {
+  width: 100%;
   background-color: var(--dark);
   padding-top: 188px;
   padding-bottom: 188px;
-  max-width: 1440px;
+  min-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
