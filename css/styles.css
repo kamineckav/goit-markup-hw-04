@@ -562,18 +562,21 @@ img {
 }
 
 .cataloge-link {
-  position: relative;
-  overflow: hidden;
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cataloge-link:hover,
-.cataloge-link:focus {
+.catalog-project-item:hover,
+.catalog-project-item:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   transform: translateY(0%);
+}
+
+.catalog-project-top {
+  overflow: hidden;
+  position: relative;
 }
 
 .catalog-project-cover {
@@ -669,12 +672,22 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-close-top {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-close-top:hover,
 .modal-close-top:focus {
   background-color: #404bbf;
+  border: none;
   fill: #ffffff;
 }
 
 .modal-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  fill: #ffffff;
 }
