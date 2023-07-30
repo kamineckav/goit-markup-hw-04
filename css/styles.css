@@ -136,7 +136,7 @@ img {
 }
 
 .current::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
@@ -428,7 +428,7 @@ img {
 }
 
 .customers-list-info {
-  fill: currentColor; 
+  fill: currentColor;
 }
 
 .footer {
@@ -565,17 +565,16 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.cataloge-link {
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cataloge-link:hover,
-.cataloge-link:focus {
+.catalog-project-item:hover,
+.catalog-project-item:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  transform: translateY(0%);
+}
+
+.cataloge-link {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .catalog-project-top {
@@ -675,19 +674,15 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-
   background-color: #404bbf;
   border: none;
 }
-
 .modal-close {
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close:hover ,
+.modal-close:hover,
 .modal-close:focus {
   fill: #ffffff;
 }
