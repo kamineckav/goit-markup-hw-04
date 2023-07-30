@@ -61,13 +61,6 @@ img {
   list-style: none;
 }
 
-/* .current {
-  width: 48px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #404BBF;
-} */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -138,8 +131,12 @@ img {
   color: var(--pressed-state);
 }
 
-.header-nav::after .header-nav-item {
-  content: "";
+.current {
+  color: #404bbf;
+}
+
+.current::after {
+  content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -682,7 +679,7 @@ img {
   fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.modal-close:hover,
+.modal-close:hover ,
 .modal-close:focus {
   fill: #ffffff;
 }
