@@ -577,11 +577,6 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.cataloge-link:hover .catalog-project-cover-text,
-.cataloge-link:focus .catalog-project-cover-text {
-  transform: translateY(0);
-}
-
 .catalog-project-top {
   overflow: hidden;
   position: relative;
@@ -597,10 +592,15 @@ img {
   background-color: #4d5ae5;
   text-align: center;
   transform: translateY(100%);
-  transition: transform 200ms ease-in;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   color: var(--cloud, #f4f4fd);
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.catalog-project-item:hover .catalog-project-cover-text,
+.catalog-project-item:focus .catalog-project-cover-text {
+  transform: translateY(0);
 }
 
 .catalog-project-wrap {
