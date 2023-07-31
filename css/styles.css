@@ -598,8 +598,11 @@ img {
   letter-spacing: 0.02em;
 }
 
-.catalog-project-item:hover .catalog-project-cover-text,
-.catalog-project-item:focus .catalog-project-cover-text {
+.catalog-project-item:hover .catalog-project-cover-text {
+  transform: translateY(0);
+}
+
+.catalog-project-item:focus .catalog-project-cover-text{
   transform: translateY(0);
 }
 
