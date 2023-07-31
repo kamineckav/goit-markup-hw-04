@@ -577,15 +577,10 @@ img {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.cataloge-project-link {
+.catalog-project-item {
   overflow: hidden;
   position: relative;
 }
-
-/* .catalog-project-item {
-  overflow: hidden;
-  position: relative;
-} */
 
 .catalog-project-cover-text {
   position: absolute;
